@@ -1,4 +1,3 @@
-   
 function round_number(num) {
     //first, move the decimal two places
     num = num * 100;
@@ -17,12 +16,39 @@ function round_number(num) {
  // i was trying to use that to get the values to be in dollar form?
 
 
- //need to add all the income values, subtract the deductables, and then multiply that value by 0.025  
+function calculate(e) {
+    console.log("Running calc")
+    let sum = 0;
+    let tax = 0;
 
-function calculate() {
+    const add_inputs = document.querySelectorAll(".add [name='qty']");
 
-    getValue("totalincome") 
+    add_inputs.forEach(function(input){
+        sum = sum + parseFloat(input.value);
+    });
 
-    class totalincome = (cash+bankbalance+stocks+investment+other)-subtract;
+    const subtraction_inputs = document.querySelectorAll(".subtract [name='qty']");
+
+    subtraction_inputs.forEach(function(input){
+        sum = sum - parseFloat(input.value);
+    });
+    
+
+    if(sum >= 5300){
+        tax = sum * 0.025;
+    }
+
+    console.log("Sum", sum);
+    console.log("Tax", tax);
+
+    document.querySelector(".totalincome").querySelector("input").value = sum;
+    document.querySelector(".zakat").querySelector("input").value = tax;
 
 }
+
+ //need to add all the income values, subtract the deductables,
+ const inputs = document.querySelectorAll("[name='qty']");
+ 
+ inputs.forEach(function(input){
+     input.addEventListener("change", calculate);
+ });

@@ -49,7 +49,7 @@ p {
 }
 
 h2 {
-  color: green;
+  color: rgb(18, 85, 18);
 }
 
 
@@ -81,5 +81,6 @@ figcaption {
   max-width: 800px;
   padding: 10px;
   margin: 0 auto;
+  background-color: rgb(177, 209, 177);
 
 }

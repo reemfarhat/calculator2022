@@ -32,7 +32,7 @@
 
     <div class = 'container image'>
         <img src="img/unsplashmosque.jpg">
-        <p class='caption'> Mostafa Meraji </p>
+        <p class='caption'> Mostafa Meraji via Unsplash </p>
     </div>
 
 
@@ -73,11 +73,11 @@
     </div>
 
     <div class='calc-container'>
-        <div class="container">
-            <h2>Zakat Calculator</h2>
-            <p>Use this tool to calculate the Zakat you can donate to incarcerated individuals.</p>
+    
+        <h2>Zakat Calculator</h2>
+        <p>Use this tool to calculate the Zakat you can donate to incarcerated individuals in USD.</p>
             
-        </div>
+        
 
         <div class="add">
             <h2>Income</h2>
@@ -85,10 +85,7 @@
                 <h3>Cash at Home</h3>
                 <div class="qty_container">
                     <div>
-                        <input type="number" name='qty' value="0" />
-                    </div>
-                    <div class="unit">
-                        $
+                        <input type="number" name='qty' value="0" step="any"/>
                     </div>
                 </div>
             </div>
@@ -97,10 +94,7 @@
                 <h3>Bank Account Balance</h3>
                 <div class="qty_container">
                     <div>
-                        <input type="number" name='qty' value="0" />
-                    </div>
-                    <div class="unit">
-                        $
+                        <input type="number" name='qty' value="0" step="any"/>
                     </div>
                 </div>
             </div>
@@ -109,10 +103,7 @@
                 <h3>Cash value of Stocks and Equities</h3>
                 <div class="qty_container">
                     <div>
-                        <input type="number" name='qty' value="0" />
-                    </div>
-                    <div class="unit">
-                        $
+                        <input type="number" name='qty' value="0" step="any"/>
                     </div>
                 </div>
             </div>
@@ -121,10 +112,7 @@
                 <h3>Cash Value of Investment Property</h3>
                 <div class="qty_container">
                     <div>
-                        <input type="number" name='qty' value="0" />
-                    </div>
-                    <div class="unit">
-                        $
+                        <input type="number" name='qty' value="0" step="any"/>
                     </div>
                 </div>
             </div>
@@ -133,10 +121,7 @@
                 <h3>Other Incomes</h3>
                 <div class="qty_container">
                     <div>
-                        <input type="number" name='qty' value="0" />
-                    </div>
-                    <div class="unit">
-                        $
+                        <input type="number" name='qty' value="0" step="any"/>
                     </div>
                 </div>
             </div>
@@ -150,10 +135,7 @@
                 <h3>Debts and Expenses</h3>
                 <div class="qty_container">
                     <div>
-                        <input type="number" name='qty' value="0" />
-                    </div>
-                    <div class="unit">
-                        $
+                        <input type="number" name='qty' value="0" step="any"/>
                     </div>
                 </div>
             </div>
@@ -165,31 +147,25 @@
                 <h3>If value exceeds $5,300 then you must pay Zakat.</h3>
                 <div class="qty_container">
                     <div>
-                        <input type="number" name='qty' value="0" readonly=readonly />
-                    </div>
-                    <div class="unit">
-                        $
+                        <input type="number" value="0" readonly />
                     </div>
                 </div>
             </div>
         </div>
 
-    <!--to calculate zakat, multiply the total (all income added up minus expenses) by 0.025-->
+        <!--to calculate zakat, multiply the total (all income added up minus expenses) by 0.025-->
 
         <div class="zakat">
             <div class='item'>
                 <h2>Total Zakat</h2>
                 <div class="qty_container">
                     <div>
-                        <input type="number" name='qty' value="0" readonly=readonly />
-                    </div>
-                    <div class="unit">
-                        $
+                        <input type="number" value="0" readonly/>
                     </div>
                 </div>
             </div>
         </div>
-    
+
     </div>
 
 
